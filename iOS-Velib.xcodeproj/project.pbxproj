@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9456CAC1B63FB970037C0C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9456CAB1B63FB970037C0C2 /* AppDelegate.swift */; };
+		F9456CAE1B63FB970037C0C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9456CAD1B63FB970037C0C2 /* ViewController.swift */; };
+		F9456CB11B63FB970037C0C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9456CAF1B63FB970037C0C2 /* Main.storyboard */; };
+		F9456CB31B63FB970037C0C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9456CB21B63FB970037C0C2 /* Images.xcassets */; };
+		F9456CB61B63FB970037C0C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9456CB41B63FB970037C0C2 /* LaunchScreen.xib */; };
+		F9456CC21B63FB970037C0C2 /* iOS_VelibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9456CC11B63FB970037C0C2 /* iOS_VelibTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9456CBC1B63FB970037C0C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9456C9E1B63FB970037C0C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9456CA51B63FB970037C0C2;
+			remoteInfo = "iOS-Velib";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F9456CA61B63FB970037C0C2 /* iOS-Velib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Velib.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9456CAA1B63FB970037C0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9456CAB1B63FB970037C0C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9456CAD1B63FB970037C0C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9456CB01B63FB970037C0C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9456CB21B63FB970037C0C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F9456CB51B63FB970037C0C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F9456CBB1B63FB970037C0C2 /* iOS-VelibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-VelibTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9456CC01B63FB970037C0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9456CC11B63FB970037C0C2 /* iOS_VelibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_VelibTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9456CA31B63FB970037C0C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9456CB81B63FB970037C0C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9456C9D1B63FB970037C0C2 = {
+			isa = PBXGroup;
+			children = (
+				F9456CA81B63FB970037C0C2 /* iOS-Velib */,
+				F9456CBE1B63FB970037C0C2 /* iOS-VelibTests */,
+				F9456CA71B63FB970037C0C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9456CA71B63FB970037C0C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9456CA61B63FB970037C0C2 /* iOS-Velib.app */,
+				F9456CBB1B63FB970037C0C2 /* iOS-VelibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9456CA81B63FB970037C0C2 /* iOS-Velib */ = {
+			isa = PBXGroup;
+			children = (
+				F9456CAB1B63FB970037C0C2 /* AppDelegate.swift */,
+				F9456CAD1B63FB970037C0C2 /* ViewController.swift */,
+				F9456CAF1B63FB970037C0C2 /* Main.storyboard */,
+				F9456CB21B63FB970037C0C2 /* Images.xcassets */,
+				F9456CB41B63FB970037C0C2 /* LaunchScreen.xib */,
+				F9456CA91B63FB970037C0C2 /* Supporting Files */,
+			);
+			path = "iOS-Velib";
+			sourceTree = "<group>";
+		};
+		F9456CA91B63FB970037C0C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9456CAA1B63FB970037C0C2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9456CBE1B63FB970037C0C2 /* iOS-VelibTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9456CC11B63FB970037C0C2 /* iOS_VelibTests.swift */,
+				F9456CBF1B63FB970037C0C2 /* Supporting Files */,
+			);
+			path = "iOS-VelibTests";
+			sourceTree = "<group>";
+		};
+		F9456CBF1B63FB970037C0C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9456CC01B63FB970037C0C2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9456CA51B63FB970037C0C2 /* iOS-Velib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9456CC51B63FB970037C0C2 /* Build configuration list for PBXNativeTarget "iOS-Velib" */;
+			buildPhases = (
+				F9456CA21B63FB970037C0C2 /* Sources */,
+				F9456CA31B63FB970037C0C2 /* Frameworks */,
+				F9456CA41B63FB970037C0C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-Velib";
+			productName = "iOS-Velib";
+			productReference = F9456CA61B63FB970037C0C2 /* iOS-Velib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9456CBA1B63FB970037C0C2 /* iOS-VelibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9456CC81B63FB970037C0C2 /* Build configuration list for PBXNativeTarget "iOS-VelibTests" */;
+			buildPhases = (
+				F9456CB71B63FB970037C0C2 /* Sources */,
+				F9456CB81B63FB970037C0C2 /* Frameworks */,
+				F9456CB91B63FB970037C0C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9456CBD1B63FB970037C0C2 /* PBXTargetDependency */,
+			);
+			name = "iOS-VelibTests";
+			productName = "iOS-VelibTests";
+			productReference = F9456CBB1B63FB970037C0C2 /* iOS-VelibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9456C9E1B63FB970037C0C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Julien Dauphant";
+				TargetAttributes = {
+					F9456CA51B63FB970037C0C2 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F9456CBA1B63FB970037C0C2 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F9456CA51B63FB970037C0C2;
+					};
+				};
+			};
+			buildConfigurationList = F9456CA11B63FB970037C0C2 /* Build configuration list for PBXProject "iOS-Velib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9456C9D1B63FB970037C0C2;
+			productRefGroup = F9456CA71B63FB970037C0C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9456CA51B63FB970037C0C2 /* iOS-Velib */,
+				F9456CBA1B63FB970037C0C2 /* iOS-VelibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9456CA41B63FB970037C0C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9456CB11B63FB970037C0C2 /* Main.storyboard in Resources */,
+				F9456CB61B63FB970037C0C2 /* LaunchScreen.xib in Resources */,
+				F9456CB31B63FB970037C0C2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9456CB91B63FB970037C0C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9456CA21B63FB970037C0C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9456CAE1B63FB970037C0C2 /* ViewController.swift in Sources */,
+				F9456CAC1B63FB970037C0C2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9456CB71B63FB970037C0C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9456CC21B63FB970037C0C2 /* iOS_VelibTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9456CBD1B63FB970037C0C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9456CA51B63FB970037C0C2 /* iOS-Velib */;
+			targetProxy = F9456CBC1B63FB970037C0C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9456CAF1B63FB970037C0C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9456CB01B63FB970037C0C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9456CB41B63FB970037C0C2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9456CB51B63FB970037C0C2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9456CC31B63FB970037C0C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9456CC41B63FB970037C0C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9456CC61B63FB970037C0C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "iOS-Velib/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F9456CC71B63FB970037C0C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "iOS-Velib/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F9456CC91B63FB970037C0C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS-VelibTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Velib.app/iOS-Velib";
+			};
+			name = Debug;
+		};
+		F9456CCA1B63FB970037C0C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS-VelibTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Velib.app/iOS-Velib";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9456CA11B63FB970037C0C2 /* Build configuration list for PBXProject "iOS-Velib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9456CC31B63FB970037C0C2 /* Debug */,
+				F9456CC41B63FB970037C0C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9456CC51B63FB970037C0C2 /* Build configuration list for PBXNativeTarget "iOS-Velib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9456CC61B63FB970037C0C2 /* Debug */,
+				F9456CC71B63FB970037C0C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F9456CC81B63FB970037C0C2 /* Build configuration list for PBXNativeTarget "iOS-VelibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9456CC91B63FB970037C0C2 /* Debug */,
+				F9456CCA1B63FB970037C0C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9456C9E1B63FB970037C0C2 /* Project object */;
+}
