@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A814835E59518ADBB0ADF46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 312634FF353D6D317279CC44 /* libPods.a */; };
+		82B1409DAF3DEC101EC2CB17 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7683A03BCB2F557B5101ACB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F9456CAC1B63FB970037C0C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9456CAB1B63FB970037C0C2 /* AppDelegate.swift */; };
 		F9456CAE1B63FB970037C0C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9456CAD1B63FB970037C0C2 /* ViewController.swift */; };
 		F9456CB11B63FB970037C0C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9456CAF1B63FB970037C0C2 /* Main.storyboard */; };
@@ -28,8 +28,8 @@
 
 /* Begin PBXFileReference section */
 		2632D3C9C054AF53FBF871B0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		312634FF353D6D317279CC44 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A744EDB6E205EEFB2125BE9B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B7683A03BCB2F557B5101ACB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9456CA61B63FB970037C0C2 /* iOS-Velib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Velib.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9456CAA1B63FB970037C0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9456CAB1B63FB970037C0C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +40,6 @@
 		F9456CBB1B63FB970037C0C2 /* iOS-VelibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-VelibTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9456CC01B63FB970037C0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9456CC11B63FB970037C0C2 /* iOS_VelibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_VelibTests.swift; sourceTree = "<group>"; };
-		F9456CCB1B6403480037C0C2 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A814835E59518ADBB0ADF46 /* libPods.a in Frameworks */,
+				82B1409DAF3DEC101EC2CB17 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +73,7 @@
 		BE739AAE8F7D6E3E0C844811 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				312634FF353D6D317279CC44 /* libPods.a */,
+				B7683A03BCB2F557B5101ACB /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -108,7 +107,6 @@
 				F9456CB21B63FB970037C0C2 /* Images.xcassets */,
 				F9456CB41B63FB970037C0C2 /* LaunchScreen.xib */,
 				F9456CA91B63FB970037C0C2 /* Supporting Files */,
-				F9456CCB1B6403480037C0C2 /* Bridging-Header.h */,
 			);
 			path = "iOS-Velib";
 			sourceTree = "<group>";
@@ -150,6 +148,7 @@
 				F9456CA31B63FB970037C0C2 /* Frameworks */,
 				F9456CA41B63FB970037C0C2 /* Resources */,
 				4B86EB43741CCB3D60913D6F /* Copy Pods Resources */,
+				5A6C50AE439737CBEA12BFC8 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +248,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A6C50AE439737CBEA12BFC8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F80EE6AB470770A31E5B2208 /* Check Pods Manifest.lock */ = {
@@ -405,10 +419,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS-Velib/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "iOS-Velib/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -418,10 +432,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS-Velib/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "iOS-Velib/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
