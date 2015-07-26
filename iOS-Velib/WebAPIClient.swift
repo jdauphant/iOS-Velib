@@ -15,24 +15,20 @@ class WebAPIClient: NSObject, SRWebSocketDelegate {
     private let socketURL = "ws://reactivevelib-env.elasticbeanstalk.com/socket"
     private var socket: SRWebSocket?
     
-    private let (signal,sink) = Signal<String, NoError>.pipe()
+    private let (signal,sink) = SignalProducer<String, NoError>.buffer(100)
     
-    var messageSignal: Signal<String, NoError> {
+    var stationsUpdate: SignalProducer<String, NoError> {
         return signal
     }
     
     static let sharedInstance = WebAPIClient()
     
     private override init() {
-        
-    }
-    
-    func connect() {
+        super.init()
         socket = SRWebSocket(URL: NSURL(string: socketURL))
         socket?.delegate = self
         socket?.open()
     }
-    
     
     @objc func webSocket(webSocket: SRWebSocket!, didReceiveMessage message: AnyObject!) {
         if let msg = message as? String {

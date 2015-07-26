@@ -23,26 +23,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcg-aw-91x">
-                                <rect key="frame" x="16" y="550" width="568" height="30"/>
-                                <state key="normal" title="Connect">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ueU-a4-3Xz" firstAttribute="leading" secondItem="bcg-aw-91x" secondAttribute="leading" id="102-5U-zp8"/>
-                            <constraint firstAttribute="bottom" secondItem="bcg-aw-91x" secondAttribute="bottom" constant="20" symbolic="YES" id="3KU-BZ-lO4"/>
                             <constraint firstItem="ueU-a4-3Xz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Xkc-Ch-Nd4"/>
-                            <constraint firstItem="bcg-aw-91x" firstAttribute="top" secondItem="ueU-a4-3Xz" secondAttribute="bottom" constant="8" symbolic="YES" id="bU0-KX-n1M"/>
                             <constraint firstItem="ueU-a4-3Xz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fIA-hU-xAY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ueU-a4-3Xz" secondAttribute="bottom" constant="58" id="mul-bU-Iuc"/>
                             <constraint firstItem="ueU-a4-3Xz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pOo-3L-Qlz"/>
-                            <constraint firstItem="ueU-a4-3Xz" firstAttribute="trailing" secondItem="bcg-aw-91x" secondAttribute="trailing" id="uza-hB-S4G"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="connectButton" destination="bcg-aw-91x" id="oJ1-gX-kBR"/>
                         <outlet property="textView" destination="ueU-a4-3Xz" id="mAn-Mh-Zlk"/>
                     </connections>
                 </viewController>

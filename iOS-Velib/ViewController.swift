@@ -16,11 +16,8 @@ class ViewController: UIViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        connectButton.rac_signalForControlEvents(.TouchUpInside).toSignalProducer()
-            |> take(1)
-            |> start(next: { _ in self.webAPIClient.connect() })
-        webAPIClient.messageSignal
-            |> observe(next: addText)
+        webAPIClient.stationsUpdate
+            |> start(next: addText)
     }
     
     private func addText(msg: String) {
