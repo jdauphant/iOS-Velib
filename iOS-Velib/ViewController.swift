@@ -17,7 +17,10 @@ class ViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         webAPIClient.stationsUpdate
-            |> start(next: addText)
+            |> start(next: {self.addText($0.description)})
+        
+        webAPIClient.newStation
+            |> start(next: {self.addText($0.description)})
     }
     
     private func addText(msg: String) {

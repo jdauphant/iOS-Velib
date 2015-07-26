@@ -15,6 +15,9 @@
 		F9456CB61B63FB970037C0C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9456CB41B63FB970037C0C2 /* LaunchScreen.xib */; };
 		F9456CC21B63FB970037C0C2 /* iOS_VelibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9456CC11B63FB970037C0C2 /* iOS_VelibTests.swift */; };
 		F9456CCF1B6528640037C0C2 /* WebAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9456CCE1B6528640037C0C2 /* WebAPIClient.swift */; };
+		F9456CD21B657DAD0037C0C2 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9456CD11B657DAD0037C0C2 /* Update.swift */; };
+		F9456CD41B657DBD0037C0C2 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9456CD31B657DBD0037C0C2 /* Station.swift */; };
+		F9456CD61B657FEB0037C0C2 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9456CD51B657FEB0037C0C2 /* Position.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		F9456CC01B63FB970037C0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9456CC11B63FB970037C0C2 /* iOS_VelibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_VelibTests.swift; sourceTree = "<group>"; };
 		F9456CCE1B6528640037C0C2 /* WebAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPIClient.swift; sourceTree = "<group>"; };
+		F9456CD11B657DAD0037C0C2 /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		F9456CD31B657DBD0037C0C2 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		F9456CD51B657FEB0037C0C2 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,9 @@
 				F9456CB41B63FB970037C0C2 /* LaunchScreen.xib */,
 				F9456CA91B63FB970037C0C2 /* Supporting Files */,
 				F9456CCE1B6528640037C0C2 /* WebAPIClient.swift */,
+				F9456CD11B657DAD0037C0C2 /* Update.swift */,
+				F9456CD31B657DBD0037C0C2 /* Station.swift */,
+				F9456CD51B657FEB0037C0C2 /* Position.swift */,
 			);
 			path = "iOS-Velib";
 			sourceTree = "<group>";
@@ -291,7 +300,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9456CCF1B6528640037C0C2 /* WebAPIClient.swift in Sources */,
+				F9456CD41B657DBD0037C0C2 /* Station.swift in Sources */,
+				F9456CD61B657FEB0037C0C2 /* Position.swift in Sources */,
 				F9456CAE1B63FB970037C0C2 /* ViewController.swift in Sources */,
+				F9456CD21B657DAD0037C0C2 /* Update.swift in Sources */,
 				F9456CAC1B63FB970037C0C2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
