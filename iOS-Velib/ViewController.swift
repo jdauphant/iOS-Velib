@@ -7,33 +7,24 @@
 //
 
 import UIKit
-import SocketRocket
+import ReactiveCocoa
 
-class ViewController: UIViewController, SRWebSocketDelegate  {
+class ViewController: UIViewController  {
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var connectButton: UIButton!
+    let webAPIClient = WebAPIClient.sharedInstance
     
-    private let socketURL = "ws://reactivevelib-env.elasticbeanstalk.com/socket"
-    private var socket: SRWebSocket?
-    
-    @IBAction func connect() {
-        socket = SRWebSocket(URL: NSURL(string: socketURL))
-        socket?.delegate = self
-        socket?.open()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        connectButton.rac_signalForControlEvents(.TouchUpInside).toSignalProducer()
+            |> take(1)
+            |> start(next: { _ in self.webAPIClient.connect() })
+        webAPIClient.messageSignal
+            |> observe(next: addText)
     }
     
     private func addText(msg: String) {
         textView.text = "\(textView.text)\(msg)\n"
-    }
-    
-    func webSocket(webSocket: SRWebSocket!, didReceiveMessage message: AnyObject!) {
-        if let msg = message as? String {
-            addText(msg)
-        }
-    }
-    
-    func webSocketDidOpen(webSocket: SRWebSocket!) {
-        addText("Connected")
-        webSocket.send("[\"subscribeAll\"]")
     }
 }
 
