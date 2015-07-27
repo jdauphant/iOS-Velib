@@ -16,15 +16,18 @@ class ViewController: UIViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         webAPIClient.stationsUpdate
+            |> observeOn(QueueScheduler.mainQueueScheduler)
             |> start(next: {self.addText($0.description)})
         
         webAPIClient.newStation
+            |> observeOn(QueueScheduler.mainQueueScheduler)
             |> start(next: {self.addText($0.description)})
     }
     
     private func addText(msg: String) {
-        textView.text = "\(textView.text)\(msg)\n"
+        textView.text = "\(msg)\n\(textView.text)"
     }
 }
 

@@ -15,6 +15,7 @@ class WebAPIClient: NSObject, SRWebSocketDelegate {
     private let socketURL = "ws://reactivevelib-env.elasticbeanstalk.com/socket"
     private var socket: SRWebSocket?
     
+
     private let (updateSignal,updateSink) = SignalProducer<Update, NoError>.buffer(100)
     private let (stationSignal,stationSink) = SignalProducer<Station, NoError>.buffer(100)
     
